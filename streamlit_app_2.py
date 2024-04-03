@@ -3,7 +3,7 @@ from snowflake.snowpark.session import Session
 from snowflake.snowpark.functions import col, when_matched
 
 # Replace placeholders with your actual Snowflake credentials
-account = "oriol.prat@seidor.com"
+account = "RG25168.snowflakecomputing.com"
 user = "oprat"
 password = "Opb.seidor24"
 warehouse = "COMPUTE_WH"
