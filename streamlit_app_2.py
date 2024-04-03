@@ -21,6 +21,13 @@ session_builder = Session.builder.configs(
 )
 
 # Create the Snowflake session
+session_builder = Session.builder.configs(account=your_account_name,
+                                            user=your_username,
+                                            password=your_password,
+                                            warehouse=warehouse,
+                                            database=database,
+                                            schema=schema)
+
 session = session_builder.create()
 
 # Write directly to the app
