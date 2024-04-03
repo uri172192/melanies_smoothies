@@ -1,6 +1,7 @@
 import streamlit as st
 from snowflake.snowpark.session import Session
 from snowflake.snowpark.functions import col, when_matched
+import snowflake.snowpark.session as snsession
 
 # Replace placeholders with your actual Snowflake credentials
 account = "RG25168.snowflakecomputing.com"
@@ -11,8 +12,7 @@ database = "SMOOTHIES"
 schema = "PUBLIC"
 
 # Create the session builder
-session_builder = Session.builder.configs(
-    account=account,
+session_builder = snsession.Session.builder.configs(
     user=user,
     password=password,
     warehouse=warehouse,
