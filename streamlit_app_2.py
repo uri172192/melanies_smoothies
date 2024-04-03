@@ -8,7 +8,7 @@ user = "oprat"
 password = "Opb.seidor24"
 warehouse = "COMPUTE_WH"
 database = "SMOOTHIES"
-schema = "PUBLIVC"
+schema = "PUBLIC"
 
 # Create the session builder
 session_builder = Session.builder.configs(
