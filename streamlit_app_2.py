@@ -5,7 +5,7 @@ import snowflake.snowpark.session as snsession
 
 # Replace placeholders with your actual Snowflake credentials
 account = "RG25168.snowflakecomputing.com"
-user = "oprat"
+user = "OPRAT"
 password = "Opb.seidor24"
 warehouse = "COMPUTE_WH"
 database = "SMOOTHIES"
