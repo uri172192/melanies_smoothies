@@ -9,7 +9,7 @@ import snowflake.snowpark.session as snsession
 st.title(":cup_with_straw: Pending Smoothie Orders :cup_with_straw:")
 st.write("Orders that need to filled:")
 
-session = get_active_session()
+
 my_dataframe = session.table("smoothies.public.orders").filter(col("ORDER_FILLED")==0).collect()
 
 if my_dataframe:
