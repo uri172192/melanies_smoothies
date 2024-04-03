@@ -8,7 +8,7 @@ st.title(":cup_with_straw: Pending Smoothie Orders :cup_with_straw:")
 st.write("Orders that need to filled:")
 
 session = get_active_session()
-my_dataframe = session.table("smoot.public.orders").filter(col("ORDER_FILLED")==0).collect()
+my_dataframe = session.table("smoothies.public.orders").filter(col("ORDER_FILLED")==0).collect()
 
 if my_dataframe:
     
@@ -18,7 +18,7 @@ if my_dataframe:
     if submitted:
         st.success('Someone clicked the button.👍')
     
-        og_dataset = session.table("smoot.public.orders")
+        og_dataset = session.table("smoothies.public.orders")
         edited_dataset = session.create_dataframe(editable_df)
     
         # Remove duplicates based on the 'name_on_order' column
